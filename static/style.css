@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, #361837, #331745 30%, #3e192f 60%, #4a1744 90%);
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(37, 35, 35, 0.9);  /* Slightly transparent dark container */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #f1f1f1;
+}
+
+input[type="file"], select {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #777;
+}
+
+select {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+}
+
+button {
+    background-color: #1c1f36;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4c51bf;
+}
+
+/* Image preview and caption in result.html */
+.image-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+p.caption {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Button back to home */
+a.btn {
+    text-decoration: none;
+    background-color: #4a5568;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+a.btn:hover {
+    background-color: #2d3748;
+}
