@@ -1,0 +1,5 @@
+transformers
+Flask
+gradio
+torch
+pillow
