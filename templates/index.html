@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Caption Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Upload an Image for Captioning</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Choose an Image</label>
+                <input type="file" class="form-control" id="file" name="file" accept="image/*" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="caption_type">Choose Caption Type</label>
+                <select class="form-control" id="caption_type" name="caption_type">
+                    <option value="brief">Brief</option>
+                    <option value="detailed">Detailed</option>
+                </select>
+            </div>
+            <br>
+
+            <label for="language">Select Language:</label>
+            <select name="language" id="language">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="zh-cn">Chinese</option>
+                <option value="de">German</option>
+                <!-- Add more languages as needed -->
+            </select>
+            <br><br>
+
+            <button type="submit" class="btn btn-primary">Upload and Generate Caption</button>
+        </form>
+    </div>
+</body>
+</html>
